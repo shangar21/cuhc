@@ -28,6 +28,8 @@ labels = cuhc.HDBSCAN(min_cluster_size=25).fit_predict(X)            # density-b
 Z = cuhc.linkage(X, method="ward")                                   # scipy tree
 ```
 
+Documentation: https://cuhc.readthedocs.io
+
 ## Contents
 
 - [Performance](#performance)
@@ -212,7 +214,8 @@ different sequence.
 
 ![Ward dendrogram, Ward segments and HDBSCAN clusters of the mall customers, for cuhc (top) and scikit-learn (bottom)](https://raw.githubusercontent.com/shangar21/cuhc/main/docs/assets/customer_segments.png)
 
-The tutorial on the documentation site explains each step.
+The [tutorial](https://cuhc.readthedocs.io/en/latest/tutorial_customer_segments/) on the
+documentation site explains each step.
 
 ---
 

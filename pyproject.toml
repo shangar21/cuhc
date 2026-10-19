@@ -26,6 +26,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/shangar21/cuhc"
+Documentation = "https://cuhc.readthedocs.io"
 Repository = "https://github.com/shangar21/cuhc"
 Issues = "https://github.com/shangar21/cuhc/issues"
 

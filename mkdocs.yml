@@ -1,4 +1,8 @@
 site_name: cuhc
+site_url: https://cuhc.readthedocs.io/
+repo_url: https://github.com/shangar21/cuhc
+repo_name: shangar21/cuhc
+edit_uri: edit/main/docs/
 site_description: Exact hierarchical clustering and HDBSCAN on the GPU, with the scikit-learn and scipy APIs
 docs_dir: docs
 exclude_docs: requirements.txt
