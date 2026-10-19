@@ -1,0 +1,20 @@
+# Build output
+build/
+dist/
+*.egg-info/
+python/cuhc/libcuhc.so
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Documentation site (mkdocs build)
+site/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store

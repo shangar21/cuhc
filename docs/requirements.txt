@@ -1,0 +1,7 @@
+# Packages to build the documentation site (mkdocs build). The build reads the
+# docstrings from the source files, so it does not install cuhc itself.
+mkdocs==1.6.1
+mkdocs-material==9.7.7
+mkdocstrings==1.0.7
+mkdocstrings-python==2.0.9
+mkdocs-include-markdown-plugin==7.3.0

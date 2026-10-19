@@ -1,0 +1,42 @@
+[build-system]
+requires = ["scikit-build-core>=0.10"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "cuhc"
+version = "0.1.0"
+description = "Exact hierarchical clustering and HDBSCAN on the GPU, with the scikit-learn and scipy APIs"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "shangar21" }]
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.22",
+  "scikit-learn>=1.3",
+]
+keywords = ["clustering", "hierarchical", "hdbscan", "linkage", "cuda", "gpu"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: C++",
+  "Environment :: GPU :: NVIDIA CUDA",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Homepage = "https://github.com/shangar21/cuhc"
+Repository = "https://github.com/shangar21/cuhc"
+Issues = "https://github.com/shangar21/cuhc/issues"
+
+[project.optional-dependencies]
+test = ["pytest", "scipy"]
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+cmake.version = ">=3.24"
+cmake.build-type = "Release"
+# The Python package is in python/cuhc; CMake installs libcuhc.so next to it.
+wheel.packages = ["python/cuhc"]
+wheel.py-api = "py3"
+sdist.exclude = ["build/", "python/cuhc/libcuhc.so", "**/__pycache__", "CLAUDE.md"]
